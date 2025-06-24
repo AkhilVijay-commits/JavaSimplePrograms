@@ -1,0 +1,16 @@
+public class revString {
+  public String reverseString(String str){
+    String reversedString = "";
+    for(int i = 0; i < str.length(); i++){
+      reversedString = str.charAt(i) + reversedString;
+    }
+    return reversedString;
+  }
+  
+  public static void main(String[] args){
+    String originalString = "abcdef";
+    revString rev = new revString();
+    String result = rev.reverseString(originalString);
+    System.out.println("The reversed string is " + result);
+  }
+}
