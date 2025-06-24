@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      String originalString = "abcdef";
+      String reversedString = "";
+      int i;
+      
+      for(i = 0; i < originalString.length(); i++){
+        reversedString = originalString.charAt(i) + reversedString;
+      }
+      
+      System.out.println("The reversed string is " + reversedString);
+  }
+}
